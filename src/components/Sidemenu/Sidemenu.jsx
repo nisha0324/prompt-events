@@ -32,7 +32,7 @@ export const Sidemenu = (props) => {
 
         props.onCollapse(inactive);
 
-    }, [inactive])
+    }, [inactive]) // eslint-disable-line react-hooks/exhaustive-deps
 
     return (
         <div className={`sidemenu ${inactive ? "inactive" : ""}`}>
