@@ -15,7 +15,6 @@ function App() {
 
   return (
     <div className="App">
-<<<<<<< HEAD
       <Router>
         <Sidemenu onCollapse={(inactive) => {
           setInactive(inactive)
@@ -58,9 +57,6 @@ function App() {
 
 
       </Router>
-=======
-      Prompts Event
->>>>>>> 4d5fdd53f68cddb8eef3841333c17072e27675e6
     </div>
   );
 }
