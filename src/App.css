@@ -1,0 +1,28 @@
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin-left: 250px;
+    padding: 50px;
+    transition: margin-left .4s ease-in-out;
+}
+
+.container.inactive {
+    margin-left: 80px;
+}
+
+/* NavLink */
+.sub-menu a, .main-menu a {
+    text-decoration: none;
+    color: #000;
+}
