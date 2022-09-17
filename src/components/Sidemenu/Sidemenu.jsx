@@ -15,7 +15,7 @@ export const Sidemenu = (props) => {
                 el.classList.remove('active')
             })
         }
-
+ 
         props.onCollapse(inactive);
 
     }, [inactive]) // eslint-disable-line react-hooks/exhaustive-deps
