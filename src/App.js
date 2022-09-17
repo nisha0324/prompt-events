@@ -7,7 +7,6 @@ import { UpcomingEvents } from './components/CalendarEvents/UpcomingEvents/Upcom
 import { AddEvents } from './components/AddEvents/AddEvents'
 import { Settings } from './components/Settings/Settings'
 import { useState } from 'react';
-import { Cards } from './components/Cards/Cards';
 
 function App() {
 
@@ -25,10 +24,6 @@ function App() {
 
             <Route path={"/"}
               element={<AllEvents />}
-            />
-
-            <Route path={"/cards"}
-              element={<Cards />}
             />
 
             <Route path={"/all-events"}
