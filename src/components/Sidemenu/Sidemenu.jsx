@@ -2,22 +2,8 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { MenuItem } from './MenuItem';
+import { menuItems } from '../../data/menuItems';
 import './Sidemenu.css';
-
-const menuItems = [
-    { name: "All Events", to: `/all-events`, iconClassName: `bi bi-collection` },
-    {
-        name: "Calendar Events",
-        // to: `/calendar-events`,
-        iconClassName: `bi bi-calendar-event`,
-        subMenus: [
-            { name: "Today's Events", to: "/todays-events" },
-            { name: "Upcoming Events", to: "/upcoming-events" }
-        ]
-    },
-    { name: "Add Events", to: `/add-events`, iconClassName: `bi bi-plus-square` },
-    { name: "Settings", to: `/settings`, iconClassName: `bi bi-app-indicator` }
-];
 
 export const Sidemenu = (props) => {
 
@@ -30,8 +16,8 @@ export const Sidemenu = (props) => {
             })
             
         }
-
-        props.onCollapse(inactive);   
+ 
+        props.onCollapse(inactive);
 
     }, [inactive]) // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -73,6 +59,7 @@ export const Sidemenu = (props) => {
                 <div className="user-icon">
                     <img src="/logo.png" alt="" />
                 </div>
+
                 <div className="user-info">
                     <span>Nisha</span>
                     <span>Premium User</span>

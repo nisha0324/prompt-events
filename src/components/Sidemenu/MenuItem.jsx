@@ -2,13 +2,14 @@ import React from 'react'
 import { useState } from 'react';
 import { NavLink } from "react-router-dom";
 
+
 export const MenuItem = (props) => {
 
-    const { name, subMenus, iconClassName, to } = props;
+    const { name, subMenus, iconClassName, onClick, to } = props;
     const [expand, setExpand] = useState(false);
 
     return (
-        <li onClick={props.onClick}>
+        <li onClick={onClick}>
             <NavLink to={to}
                 onClick={() => setExpand(!expand)} className='menu-item'>
                 <div className="menu-icon">
